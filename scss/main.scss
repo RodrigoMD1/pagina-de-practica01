@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -136,7 +137,7 @@ p{
 .services{
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 30px;
     max-width: 100%;
     margin-top: 40px;
@@ -157,3 +158,306 @@ p{
 .services .box .iconBx img {
     max-width: 70px;
 }
+
+.services .box h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.stats{
+    background: #000;
+    padding-top: 250px;
+    margin-top: -250px;
+}
+
+.stats h3,
+.stats p{
+
+    color: #fff;
+}
+
+.statsBox{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.statsBox h2{
+    color: #fff;
+    font-size: 36px;
+}
+.statsBox h4{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.workBx{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+.workBx .brand{
+    position: relative;
+    background: #4978ff;
+    min-height: 300px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.workBx .brand:hover{
+    background: #000;
+
+}
+
+.workBx .brand a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+}
+.workBx .brand:hover a{
+    color: rgba(255,255,255,1);
+}
+
+.teamBx{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.teamBx .member{
+    position: relative;
+    background: #000;
+    min-height: 300px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teamBx .member .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.teamBx .member .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.teamBx .member .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: 0.2s;
+    opacity: 0;
+}
+.teamBx .member:hover .details{
+    opacity: 1;
+
+}
+.teamBx .member .details h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.teamBx .member .details h2 span{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.contac{
+    background: #000;
+}
+.contac h3,
+.contac p{
+    color: #fff;
+}
+
+.contacForm{
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+.contacForm form{
+    width: 100%;
+}
+.contacForm .row100{
+    display: flex;
+    width: 100%;
+}
+
+.contacForm .row100 .inputBx50{
+    width: 50%;
+    margin: 0 20px;
+}
+.contacForm .row100 .inputBx100{
+    width: 100%;
+    margin: 0 20px;
+}
+.contacForm .row100 input,
+.contacForm .row100 textarea{
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0;
+    resize: none;
+
+}
+.contacForm .row100 textarea{
+    height: 100px;
+}
+.contacForm .row100 input::placeholder,
+.contacForm .row100 textarea::placeholder{
+    color: rgba(255,255,255,0.5);
+}
+.contacForm .row100 input[type="submit"]{
+    max-height: property;
+    max-width: property;
+    max-width: 100px;
+    
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.sci {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.sci ul{
+    display: flex;
+}
+.sci ul li{
+    list-style: none;
+}
+.sci ul li a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 30px;
+    
+}
+.sci ul li a img{
+    filter: invert(1);
+    max-width: 40px;
+}
+.sci ul li a:hover img{
+    opacity: 0.5;
+}
+
+.copyright a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.toggle{
+    display: none;
+}
+
+@media (max-width: 992px){
+    .toggle{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    } 
+    .toggle:before{
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        box-shadow:  0 10px 0 #fff;
+        transform: 0.5s;
+    }
+    .toggle:after{
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        
+        transform: 0.5s;
+    }
+    header{
+        padding: 5px 50px;
+        background: #fff;
+    }
+    .banner{
+        background-position: center;
+    }
+    .banner h2{
+        font-size: 60px;
+        padding: 0 50px;
+    }
+    .sec{
+        padding: 100px 50px 50px 50px;
+    }
+    .services .box{
+        width: 100%;
+    }
+    .stats{
+        padding-top: 250px;
+    }
+    .row100{
+        flex-direction: column;
+    }
+    .contacForm.row100.inputBx50,
+    .contacForm.row100.inputBx100{
+        width: 100%;
+        margin: 0;
+    }
+    .sci ul li a img{
+        font-size: 24px;
+    }
+}
+
