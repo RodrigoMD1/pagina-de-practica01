@@ -1,13 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+
     <title>Document</title>
 </head>
+
 <body>
-    
+    <!--Header-->
+    <header id="Header" class="sticky">
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#team">team</a></li>
+            <li><a href="#contac">contac</a></li>
+
+
+        </ul>
+    </header>
+    <!--Banner-->
+    <section class="banner" id="home">
+        <h2>We Make<br> <span>Brands</span> Matter </h2>
+    </section>
+    <!--About-->
+    <section class="sec" id="about">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>who we are</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis architecto dolor repudiandae?
+                    Aspernatur deserunt optio pariatur recusandae at tempore molestias reiciendis totam illo tenetur
+                    dolorem blanditiis ad impedit, aut corporis!
+                    Ut impedit delectus est ipsa neque repellat veritatis iusto id debitis nemo, temporibus provident
+                    consectetur dignissimos atque quisquam eveniet necessitatibus, laboriosam praesentium vel totam quo
+                    ipsum qui quis? Aspernatur, laboriosam.</p>
+                <a href="#" class="btn">Read Our Story</a>
+            </div>
+    </section>
+    <!--Services-->
+    <section class="sec" id="services">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>what we do</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis architecto dolor repudiandae?
+                    Aspernatur deserunt optio pariatur recusandae at tempore molestias reiciendis totam illo tenetur
+                    dolorem blanditiis ad impedit, aut corporis!.</p>
+            </div>
+
+            <div class="services">
+                <div class="box">
+                    <div class="iconBx">
+                       <img src="./img/icon1.png">
+                    </div>
+                    <div class="content">
+                        <h2>Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat possimus id, itaque fugit
+                            fugiat accusantium optio sint quos illo vero debitis earum, maiores saepe nihil.
+                            Reprehenderit odio dignissimos enim nam.</p>
+                    </div>
+                </div>
+        </div>
+        <div class="services">
+        <div class="box">
+            <div class="iconBx">
+               <img src="./img/icon2.png">
+            </div>
+            <div class="content">
+                <h2>Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat possimus id, itaque fugit
+                    fugiat accusantium optio sint quos illo vero debitis earum, maiores saepe nihil.
+                    Reprehenderit odio dignissimos enim nam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="box">
+            <div class="iconBx">
+               <img src="./img/icon3.png">
+            </div>
+            <div class="content">
+                <h2>branding</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat possimus id, itaque fugit
+                    fugiat accusantium optio sint quos illo vero debitis earum, maiores saepe nihil.
+                    Reprehenderit odio dignissimos enim nam.</p>
+            </div>
+        </div>
+    </div>
+        
+
+
+
+
+    </section>
+    <!--Stats-->
+    <!--Portfolio-->
+    <!--Team-->
+    <!--Contact-->
+    <script type="text/javascript">
+        window.addEventListener("scroll", funtion(){
+            var header = document.querySelector("header"),
+            header.classlist.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
 </body>
+
 </html>
